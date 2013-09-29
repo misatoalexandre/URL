@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *uRLField;
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 - (IBAction)buttonLaunch:(id)sender;
 - (IBAction)backgroundTap:(id)sender;
 - (IBAction)resignKeyboard:(id)sender;
