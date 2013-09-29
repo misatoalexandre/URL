@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController (){
+    UIApplication *application;
+}
 
 @end
 
@@ -27,7 +29,10 @@
 }
 
 - (IBAction)buttonLaunch:(id)sender {
-    //
+    if (!application) {
+        application=[UIApplication sharedApplication];
+        [application openURL:[NSURL URLWithString:self.uRLField.text]];
+    }
 }
 
 - (IBAction)backgroundTap:(id)sender {
