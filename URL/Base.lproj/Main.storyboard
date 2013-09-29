@@ -12,7 +12,7 @@
                         <viewControllerLayoutGuide type="top" id="AzT-D5-eAX"/>
                         <viewControllerLayoutGuide type="bottom" id="GA6-92-OUZ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -42,9 +42,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="resignKeyboard:" destination="vXZ-lx-hvc" eventType="editingDidEndOnExit" id="hM0-dl-bq4"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <connections>
+                            <action selector="backgroundTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="c7V-dQ-2TP"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="uRLField" destination="GJR-0j-h2P" id="jt4-P9-jc0"/>

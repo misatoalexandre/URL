@@ -11,5 +11,7 @@
 @interface ViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *uRLField;
 - (IBAction)buttonLaunch:(id)sender;
+- (IBAction)backgroundTap:(id)sender;
+- (IBAction)resignKeyboard:(id)sender;
 
 @end

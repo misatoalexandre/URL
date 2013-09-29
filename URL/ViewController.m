@@ -29,4 +29,12 @@
 - (IBAction)buttonLaunch:(id)sender {
     //
 }
+
+- (IBAction)backgroundTap:(id)sender {
+    [self.uRLField resignFirstResponder];
+}
+
+- (IBAction)resignKeyboard:(id)sender {
+    [sender resignFirstResponder];
+}
 @end
