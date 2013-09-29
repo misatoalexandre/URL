@@ -26,4 +26,6 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)buttonLaunch:(id)sender {
+}
 @end
