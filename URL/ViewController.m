@@ -31,11 +31,11 @@
 - (IBAction)buttonLaunch:(id)sender {
     if (!application) {
         application=[UIApplication sharedApplication];
-        //[application openURL:[NSURL URLWithString:self.uRLField.text]];
-        NSURL *url=[NSURL URLWithString:self.uRLField.text];
+        [application openURL:[NSURL URLWithString:self.uRLField.text]];
+        /*NSURL *url=[NSURL URLWithString:self.uRLField.text];
         
         NSURLRequest *request=[NSURLRequest requestWithURL:url];
-        [self.webView loadRequest:request];
+        [self.webView loadRequest:request];*/
     }
 }
 
